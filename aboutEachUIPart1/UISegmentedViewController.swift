@@ -8,22 +8,29 @@
 import UIKit
 
 class UISegmentedViewController: UIViewController {
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var label: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    
+    }
+  //UIUISegmentedControlがセレクトされた時の処理
+    @IBAction func changeSelect(_ sender: AnyObject) {
+        let num = segmentedControl.selectedSegmentIndex //選択されたもの
+        //titleForSegmentの戻り値はString?なのでアンラップしないといけない
+        if let title = segmentedControl.titleForSegment(at: num) {
+            label.text = "\(num)番目の\(title)が選択されました"
+        }
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func pressButton(_ sender: AnyObject) {
+        segmentedControl.selectedSegmentIndex = 1 //０から始まるから1を選択
     }
-    */
-
+    
 }
