@@ -13,6 +13,10 @@
 		CF11BD832687095400E89A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF11BD812687095400E89A89 /* Main.storyboard */; };
 		CF11BD852687095500E89A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF11BD842687095500E89A89 /* Assets.xcassets */; };
 		CF11BD882687095500E89A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF11BD862687095500E89A89 /* LaunchScreen.storyboard */; };
+		CF11BD9026870BD300E89A89 /* UISegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11BD8F26870BD300E89A89 /* UISegmentedViewController.swift */; };
+		CF11BD9226870C9800E89A89 /* UIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11BD9126870C9800E89A89 /* UIImageViewController.swift */; };
+		CF11BD9426870D2400E89A89 /* UISwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11BD9326870D2400E89A89 /* UISwitchViewController.swift */; };
+		CF11BD9626870D4600E89A89 /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11BD9526870D4600E89A89 /* UISliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CF11BD842687095500E89A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF11BD872687095500E89A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF11BD892687095500E89A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF11BD8F26870BD300E89A89 /* UISegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedViewController.swift; sourceTree = "<group>"; };
+		CF11BD9126870C9800E89A89 /* UIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewController.swift; sourceTree = "<group>"; };
+		CF11BD9326870D2400E89A89 /* UISwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchViewController.swift; sourceTree = "<group>"; };
+		CF11BD9526870D4600E89A89 /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			children = (
 				CF11BD7B2687095400E89A89 /* AppDelegate.swift */,
 				CF11BD7D2687095400E89A89 /* SceneDelegate.swift */,
+				CF11BD9526870D4600E89A89 /* UISliderViewController.swift */,
+				CF11BD9326870D2400E89A89 /* UISwitchViewController.swift */,
+				CF11BD9126870C9800E89A89 /* UIImageViewController.swift */,
+				CF11BD8F26870BD300E89A89 /* UISegmentedViewController.swift */,
 				CF11BD7F2687095400E89A89 /* ViewController.swift */,
 				CF11BD812687095400E89A89 /* Main.storyboard */,
 				CF11BD842687095500E89A89 /* Assets.xcassets */,
@@ -138,8 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF11BD802687095400E89A89 /* ViewController.swift in Sources */,
+				CF11BD9226870C9800E89A89 /* UIImageViewController.swift in Sources */,
 				CF11BD7C2687095400E89A89 /* AppDelegate.swift in Sources */,
 				CF11BD7E2687095400E89A89 /* SceneDelegate.swift in Sources */,
+				CF11BD9426870D2400E89A89 /* UISwitchViewController.swift in Sources */,
+				CF11BD9626870D4600E89A89 /* UISliderViewController.swift in Sources */,
+				CF11BD9026870BD300E89A89 /* UISegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cow.iwaski.aboutEachUIPart1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cow.iwaski.aboutEachUIPart1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
